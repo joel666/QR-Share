@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 0px;
+  column-count: 2;
+  width: 100%;
+}
+
+.child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#content {
+  background-color: transparent;
+  color: white;
+  margin: 10px 0;
+  padding: 20px;
+  width: 100%;
+}
+
+#content:focus {
+  outline: unset;
+}
+
+#qr-canvas {
+  width: 200px;
+  height: 200px;
+}
+
+#btnSubmit {
+  padding: 10px 30px;
+  background-color: orange;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+}
